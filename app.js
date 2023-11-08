@@ -2,6 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 
 const blogRouter = require("./routes/blogRoutes");
+const userRouter = require("./routes/userRoutes");
 
 // dotenv for loading environment variable
 dotenv.config({ path: "./config.env" });
@@ -18,5 +19,6 @@ app.use(express.json());
 
 // API endpoints
 app.use("/api/v1/blogs", blogRouter);
+app.use("/api/v1/user", userRouter);
 
 module.exports = app;
