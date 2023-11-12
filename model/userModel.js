@@ -25,11 +25,13 @@ const useSchema = mongoose.Schema({
     type: String,
     enum: ["normalUser", "admin"],
     default: "normalUser",
+    select: false,
   },
 
   active: {
     type: Boolean,
     default: true,
+    select: false,
   },
 });
 

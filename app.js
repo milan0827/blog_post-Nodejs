@@ -19,6 +19,6 @@ app.use(express.json());
 
 // API endpoints
 app.use("/api/v1/blogs", blogRouter);
-app.use("/api/v1/user", userRouter);
+app.use("/api/v1/users", userRouter);
 
 module.exports = app;
